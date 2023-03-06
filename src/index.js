@@ -1,30 +1,23 @@
-import image from './home-image.jpg';
+import image from './home-image.png';
+import './aboutStyle.css';
 console.log("Test temp")
 
 const home = ()=>{
     const content = document.querySelector('#content');
     content.innerHTML = ""
     let head = document.createElement('h1');
-    head.textContent = "Restaurant Page";
-    let img = new Image();
-    img.src = image;
-    img.setAttribute('height', '500px')
+    head.textContent = "About Us";
+    head.classList.add('head')
     let p = document.createElement('p');
-    p.textContent = "Best Restaurant on planet ig"
+    p.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus mauris vel ipsum tincidunt tincidunt. Phasellus sem turpis, vehicula eu nunc id, dictum auctor libero. Sed laoreet pellentesque metus non varius. Etiam tellus magna, lacinia vitae aliquet nec, auctor vel tellus. Nullam id volutpat sapien, et tincidunt sapien. Pellentesque vitae tristique urna. Nullam auctor mi vitae lorem viverra fermentum. Nunc sed sapien et nulla tempus auctor. Proin sit amet ex in ligula tincidunt pellentesque. Ut diam velit, blandit at augue sit amet, sollicitudin porttitor lorem. Nullam pharetra posuere justo, sed tempus velit rhoncus non. Nam et scelerisque metus. Sed ut. `
     content.appendChild(head);
-    content.appendChild(img);
     content.appendChild(p);
 };
 
 const menu = ()=>{
     const content = document.querySelector('#content');
     content.innerHTML = ""
-    let item1  = document.createElement('h2');
-    item1.textContent = "Pasta"
-    let item2 = document.createElement("h2");
-    item2.textContent = "Pizza"
-    content.appendChild(item1)
-    content.appendChild(item2);
+    
 }
 
 home();
