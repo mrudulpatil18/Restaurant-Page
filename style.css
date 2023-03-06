@@ -1,0 +1,68 @@
+body{
+    background-image: url(./images/bakground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 104px 1fr 38px;
+}
+
+*{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px 5px 50px;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    border-bottom: solid #c59d5f;
+}
+
+.header .title{
+    font-family: 'Style Script', cursive;
+    font-size: 50px;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.header button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    font-family: 'Stylish', sans-serif;
+}
+
+.footer{
+    border-top: solid #c59c5fef;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    background-color: #0b0706e9;
+    padding-top: 5px;
+}
+
+.footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: lightgray;
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    
+}
+
+
