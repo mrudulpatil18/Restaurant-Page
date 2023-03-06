@@ -140,7 +140,7 @@ button.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #eedfca;
+    color: #f7ead8;
     background-color: #000000;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
@@ -163,4 +163,43 @@ button.active{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.contact_title{
+    font-weight: light;
+    color: #c59c5f;
+    align-self: center;
+}
+.contact{
+    margin: auto;
+    width: min(400px, 100%);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    border-left: solid 3px #c59c5f;
+    border-right: solid 3px #c59c5f;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.field{
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;   
+}
+
+.field img{
+    height: 50px;
+    width: auto;
+    filter: invert(1);
+}
+
+.field .info{
+    font-size: 23px;
+    color: white;
+    font-family: 'Stylish';
 }
