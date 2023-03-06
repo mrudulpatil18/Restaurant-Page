@@ -31,22 +31,22 @@ const menu = ()=>{
             <div class="card">
                 <div class="name">Chocolate Cake</div>
                 <img src="./images/chocolate_cake.webp" alt="chocolate_cake_img">
-                <div class="cost">100 Rs</div>
+                <div class="cost">500 ₹</div>
             </div>
             <div class="card">
                 <div class="name">Cheese Cake</div>
                 <img src="./images/cheese_cake.jpg" alt="chocolate_cake_img" >
-                <div class="cost">100 Rs</div>
+                <div class="cost">400 ₹</div>
             </div>
             <div class="card">
                 <div class="name">Strawberry Cake</div>
                 <img src="./images/strawberry_cake.jpg" alt="chocolate_cake_img" >
-                <div class="cost">100 Rs</div>
+                <div class="cost">500 ₹</div>
             </div>
             <div class="card">
                 <div class="name">Muffins</div>
                 <img src="./images/muffins.jpg" alt="chocolate_cake_img">
-                <div class="cost">100 Rs</div>
+                <div class="cost">100 ₹</div>
             </div>
         </div>
     `
@@ -60,7 +60,21 @@ const contact = ()=>{
     home_button.classList.remove('active');
     menu_button.classList.remove('active');
     const content = document.querySelector('#content');
-    content.innerHTML = ""
+    content.innerHTML = `
+ 
+    <div class="contact">
+        <h1 class="contact_title">Contact</h1>
+            <div class="field">
+                <img src="images/icons8-phone-60.png" alt="phone_logo">
+                <div class="info">123-456-789</div>
+            </div>
+            <div class="field">
+                <img src="images/icons8-google-maps-old-60.png" alt="maps_logo">
+                <div class="info">221B Baker St, Marylebone, London NW1 6XE, UK</div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4248513434086!2d-0.1585557!3d51.523767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20UK!5e0!3m2!1sen!2sin!4v1678103002409!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+    `
     
 }
 
