@@ -1,9 +1,15 @@
 
-import './aboutStyle.css';
-console.log("Test temp")
+
+const home_button = document.querySelector('#home');
+const menu_button = document.querySelector('#menu');
+const contact_button = document.querySelector('#contact');
 
 const home = ()=>{
+    home_button.classList.add('active');
+    menu_button.classList.remove('active');
+    contact_button.classList.remove('active');
     const content = document.querySelector('#content');
+    content.style.backgroundColor = 'transparent'
     content.innerHTML = ""
     let head = document.createElement('h1');
     head.textContent = "About Us";
@@ -15,15 +21,54 @@ const home = ()=>{
 };
 
 const menu = ()=>{
+    menu_button.classList.add('active');
+    home_button.classList.remove('active');
+    contact_button.classList.remove('active');
+    const content = document.querySelector('#content');
+    content.innerHTML = `
+    <h1 class="menu">Menu</h1>
+        <div class="container">
+            <div class="card">
+                <div class="name">Chocolate Cake</div>
+                <img src="./images/chocolate_cake.webp" alt="chocolate_cake_img">
+                <div class="cost">100 Rs</div>
+            </div>
+            <div class="card">
+                <div class="name">Cheese Cake</div>
+                <img src="./images/cheese_cake.jpg" alt="chocolate_cake_img" >
+                <div class="cost">100 Rs</div>
+            </div>
+            <div class="card">
+                <div class="name">Strawberry Cake</div>
+                <img src="./images/strawberry_cake.jpg" alt="chocolate_cake_img" >
+                <div class="cost">100 Rs</div>
+            </div>
+            <div class="card">
+                <div class="name">Muffins</div>
+                <img src="./images/muffins.jpg" alt="chocolate_cake_img">
+                <div class="cost">100 Rs</div>
+            </div>
+        </div>
+    `
+    content.style.backgroundColor = '#ffffff7f';
+    
+}
+
+const contact = ()=>{
+    
+    contact_button.classList.add('active');
+    home_button.classList.remove('active');
+    menu_button.classList.remove('active');
     const content = document.querySelector('#content');
     content.innerHTML = ""
     
 }
 
 home();
-const home_button = document.querySelector('#home');
-const menu_button = document.querySelector('#menu');
+
+
 
 home_button.addEventListener('click', home);
 menu_button.addEventListener('click', menu);
+contact_button.addEventListener('click', contact);
 

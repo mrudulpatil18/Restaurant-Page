@@ -51,6 +51,7 @@ body{
     width: 100%;
     background-color: #0b0706e9;
     padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .footer a{
@@ -66,3 +67,100 @@ body{
 }
 
 
+
+h8:hover,button:hover{
+    border-bottom: solid 1px #c59c5f;
+}
+
+button.active{
+    padding-bottom: 5px;
+    border-bottom: solid  2px #c59c5f;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.head{
+    position: relative;
+    right: min(calc(50% - 10%), calc(600px - 100px));
+    color: #c59d5f;
+}
+
+.menu{
+    color: #000000;
+    align-self: center;
+    font-size: 50px;
+    font-family: 'Stylish', sans-serif;
+}
+
+#content p{
+    text-align: justify;
+    padding: 20px;
+    border-left: solid #c59c5f56;
+    border-right: solid #c59c5f56;
+    border-radius: 50%;
+    width: min(100%, 1200px);
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.672);
+    font-family: 'Stylish', sans-serif;
+    border-radius: 4px ;
+}
+
+.container{
+    padding: 20px;
+    width: min(100%, 1200px);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    padding:  0px 0 0 0;
+    border-radius: 20px;
+}
+.card .name{
+    font-family: 'Style Script', cursive;
+    height: 60px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eedfca;
+    background-color: #000000;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    
+}
+
+.card img{
+    width: 250px;
+    border-bottom: solid 2px #c59c5f;
+    border-top: solid 1px #000000
+}
+
+.card .cost{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    border-radius: 0  0px 20px 20px;
+    font-size: 20px;
+    color: #d4a866c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
