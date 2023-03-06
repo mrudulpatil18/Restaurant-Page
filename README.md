@@ -12,8 +12,8 @@ Cake Shop/Restaurant Webproject using webpack and ES6 Modules.
 
 ## Screenshot
 
-![App Screenshot](./ss.png)
 ![App Screenshot](./ss1.png)
+![App Screenshot](./ss2.png)
 
 
 #
