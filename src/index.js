@@ -1,4 +1,4 @@
-import image from './home-image.png';
+
 import './aboutStyle.css';
 console.log("Test temp")
 
